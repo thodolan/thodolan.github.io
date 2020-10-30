@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
     <link rel="stylesheet" type="text/css" href="resources/css/querys.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/grid.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
@@ -31,6 +32,7 @@
 1.NAVIGATION
 ------------------------------------------------------------------------
 --------------->
+
 
       <div id="navbar">
         <div id="nav-left">
@@ -182,6 +184,9 @@
         <div id="triangle-topleft"></div>
 
         <div class="hero-left">
+          <div class="circle" id="circle-home">
+            <p>From only £47.50 +VAT</p>
+          </div>
           <img
           id="vanb"
           class="van animate__animated animate__slideInRight animate__faster"
@@ -219,16 +224,15 @@
             <form class="hero-form" id="form-callback" method="post" action="callback-form-handler.php">
               <h2 class="hero-form-header">Arrange a callback from one of our team...</h2>
               <!-- <label for="name-callback">Your name</label> -->
-              <div class="head-form-div">
+              <!-- <div class="head-form-div"> -->
                 <input class="form-inputb" name="name-callback" id="name-callback" type="text" placeholder="Your name" >
                 <!-- <label for="number-callback">Contact number</label> -->
                 <input class="form-inputb" name="number-callback" id="number-callback" type="tel" placeholder="Tel number">
-              </div>
-              <div class="head-form-div">
+              <!-- </div> -->
+              <!-- <div class="head-form-div">
                 <input class="form-inputb dropdown" name="name-callback" id="name-callback" type="dropdown" placeholder="Problem type &#9207;" >
-                <!-- <label for="number-callback">Contact number</label> -->
                 <input class="form-inputb" name="number-callback" id="number-callback" type="text" placeholder="Postcode">
-              </div>
+              </div> -->
               
               <button class="hero-form-button" name="submit" type="submit" value="Send" id="submit">Request a Callback</button>
             </form> 
