@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="247drains are a reliable London drain unblocking service." />
+
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/querys.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="152x152" href="resources/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/img/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/img/favicon//favicon-16x16.png">
+    <link rel="manifest" href="resources/img/favicon//site.webmanifest">
+    <link rel="mask-icon" href="resources/img/favicon//safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+
+  <body>
+
+<!-------------
+  ----------------------------------------------------------------------
+1.NAVIGATION
+------------------------------------------------------------------------
+--------------->
+
+      <div id="navbar">
+        <div id="nav-left">
+<!-------------
+1B.HAMBURGER
+--------------->
+          <div class="menu" onclick="menuTransform(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+  
+          <img
+            src="resources/img/logo247drains2.png"
+            alt="247Drains logo"
+            id="logo"
+            href="index.html"
+          />
+        </div>
+  
+        <nav id="large-menu">
+          <li class="l-menu-item"><a href="index.html">Home</a></li>
+          <li class="l-menu-item"><a href="about-us.html">About</a></li>
+          <li class="l-menu-item" id="services-menu-item" onmouseover="servicesDropdown()" onmouseout="servicesDropdownRemove()">Services<ion-icon id="caret-down-l" name="caret-down"></ion-icon></li>
+          <li class="l-menu-item"><a href="247-commercial.html">247 Commercial</a></li>
+        </nav>
+  
+        <div id="nav-right">
+          <div id="call-nav-block">
+            <ion-icon id="call-icon" name="call"></ion-icon>
+            <a id="call" href="tel:0800 7 999 247">Call</a>
+            <a id="call-large" href="tel:0800 7 999 247">0800 7 999 247</a>
+          </div>
+  
+          <div id="book-nav-block">
+            <a id="book" href="book-online.html"
+              >Book <br />
+              now</a
+            >
+          </div>
+        </div>
+      </div>
+
+    <div id="services-dropdown" onmouseover="servicesDropdown()" onmouseout="servicesDropdownRemove()">
+      <ul id="s-drop-list">
+        <li class="s-drop-item"><a href="drain-unblocking.html">Emergency Drain Unblocking</a></li>
+        <li class="s-drop-item"><a href="external-drains.html">External Drains</a></li>
+        <li class="s-drop-item"><a href="high-pressure-jetting.html">High Pressure Jetting</a></li>
+        <li class="s-drop-item"><a href="emergency-plumbing.html">Emergency Plumbing</a></li>
+        <li class="s-drop-item"><a href="cctv-drain-surveys.html">CCTV Drain Surveys</a></li>
+        <li class="s-drop-item"><a href="ongoing-drain-maintenance.html">Ongoing Drain Maintenance</a></li>
+      </ul>
+    </div>
+    
+<!-------------
+1C.SIDE NAV
+--------------->
+
+    <div id="mySidenav" class="sidenav">
+      <div class="side-menu">
+        <a class="sidenav-items current-item" href="index.html"><img class="sidenav-icons" src="resources/img/icons/002-home.svg">Home</a>
+        <a class="sidenav-items" href="about-us.html"><img class="sidenav-icons" src="resources/img/icons/info.svg">About</a>
+        <a class="services-dropdown" onclick="dropdownToggle()"><img class="sidenav-icons" src="resources/img/icons/plumbing-white.svg">
+          Services
+          <ion-icon id="caret-down" name="caret-down"></ion-icon>
+        </a>
+        <div class="dropdown-container">
+          <a class="dropdown-services" href="drain-unblocking.html">&#9656 Drain Unblocking</a>
+          <a class="dropdown-services" href="high-pressure-jetting.html">&#9656 High Pressure Jetting</a>
+          <a class="dropdown-services" href="emergency-plumbing.html">&#9656 Emergency Plumbing</a>
+          <a class="dropdown-services" href="cctv-drain-surveys.html">&#9656 CCTV Surveys</a>
+          <a class="dropdown-services" href="ongoing-drain-maintenance.html">&#9656 Ongoing Drain Maintenance</a>
+        </div>
+        <a class="sidenav-items" href="247-commercial.html"><img class="sidenav-icons" src="resources/img/icons/portfolio.svg">247 Commercial</a>
+        <a class="sidenav-items" href="book-online.html"><img class="sidenav-icons" src="resources/img/icons/calendar.svg">Book Online</a>
+      </div>
+    </div>
+
+<!-------------
+  ---------------------------------------------------------------------
+2.COVID-19 SECTION
+-----------------------------------------------------------------------
+--------------->
+
+    <div id="section-2">
+      <div id="s2-title">
+        <img id="virus" src="resources/img/virus.png" />
+        <h3 id="s2-head">Covid-19 Safe</h3>
+      </div>
+      <p id="virus-text">
+        <strong>We are open</strong> and continuing to serve our customers. We have taken a 
+        number of important steps to keep both our staff and our customers safe, including 
+        distancing, regular handwashing and the use of masks and other PPE. If you have any 
+        questions please ask a member of our team or <a href="#">Read our covid-19 policy here</a>
+      </p>
+      <div id="virus-close" onclick="closeVirus()">&times;</div>
+
+    </div>
+
+<!-------------
+  ---------------------------------------------------------------------
+3.HERO SECTION
+-----------------------------------------------------------------------
+--------------->
+
+<!-------------
+3A.HERO SECTION MBL
+--------------->
+
+    <div id="section-3">
+      <div class="circle" id="circle-home">
+        <p>From only £47.50 +VAT</p>
+      </div>
+      <img
+        id="vanb"
+        class="van animate__animated animate__slideInRight animate__faster"
+        src="resources/img/247-van-cropped.png"
+        alt="247Drains Van image"
+      />
+
+      <div id="triangle-topright"></div>
+
+      <div id="rectangle-bottom">
+        <div class="image-text-row">
+          <img src="resources/img/icons/city.svg" class="image-icon" />
+          <p>London-<br />wide</p>
+        </div>
+        <div class="image-text-row">
+          <img src="resources/img/icons/thumbs-up2.svg" class="image-icon" />
+          <p>No Callout <br />Charge</p>
+        </div>
+        <div class="image-text-row">
+          <img src="resources/img/icons/fast-van.svg" class="image-icon" />
+          <p>Fast <br />Response</p>
+        </div>
+        <div class="image-text-row">
+          <img src="resources/img/icons/clock2.svg" class="image-icon" />
+          <p>24/7 <br />Service</p>
+        </div>
+      </div>
+    </div>
+
+<!-------------
+3B.HERO SECTION LRG
+--------------->
+
+    <div id="section-3b">
+      <div class="section-3b-top">
+        <div id="triangle-topleft"></div>
+
+        <div class="hero-left">
+          <img
+          id="vanb"
+          class="van animate__animated animate__slideInRight animate__faster"
+          src="resources/img/247-van-cropped.png"
+          alt="247Drains Van image"
+          />
+  
+          <div class="checkmarks">
+            <!-- <div class="checkmarks-1"> -->
+              <div class="checkmark">
+                <h2 class="check"> &#10004; </h2><h2 class="check-text">London-Wide</h2>
+              </div>
+              <div class="checkmark">
+                <h2 class="check"> &#10004; </h2><h2 class="check-text">No Callout Charge</h2>
+              </div>
+            <!-- </div> -->
+           <!-- <div class="checkmarks-2"> -->
+              <div class="checkmark">
+                <h2 class="check"> &#10004; </h2><h2 class="check-text">Fast Response</h2>
+              </div>
+              <div class="checkmark">
+                <h2 class="check"> &#10004; </h2><h2 class="check-text">24/7 Service</h2>
+              </div>
+           <!-- </div>           -->
+          </div>
+        </div>
+        
+        <div class="hero-right">
+          <!-- <div class="slogo"> -->
+            <h2 class="hero-headb headb-blue">Blocked drains, sorted</h2>
+            <h2 class="hero-headb headb-red">ACROSS LONDON</h2>
+          <!-- </div> -->
+    
+          <!-- <div class="hero-card-b"> -->
+            <form class="hero-form" id="form-callback" method="post" action="callback-form-handler.php">
+              <h2 class="hero-form-header">Arrange a callback from one of our team...</h2>
+              <!-- <label for="name-callback">Your name</label> -->
+              <div class="head-form-div">
+                <input class="form-inputb" name="name-callback" id="name-callback" type="text" placeholder="Your name" >
+                <!-- <label for="number-callback">Contact number</label> -->
+                <input class="form-inputb" name="number-callback" id="number-callback" type="tel" placeholder="Tel number">
+              </div>
+              <div class="head-form-div">
+                <input class="form-inputb dropdown" name="name-callback" id="name-callback" type="dropdown" placeholder="Problem type &#9207;" >
+                <!-- <label for="number-callback">Contact number</label> -->
+                <input class="form-inputb" name="number-callback" id="number-callback" type="text" placeholder="Postcode">
+              </div>
+              
+              <button class="hero-form-button" name="submit" type="submit" value="Send" id="submit">Request a Callback</button>
+            </form> 
+          <!-- </div> -->
+        </div>
+      </div>
+      
+
+      <div class="icon-display">
+        <div class="icon-display-unit border-right">
+          <img src="resources/img/icons/stopwatch-blue.svg" class="icon-display-icon" alt="">
+          <div class="icon-display-text">
+            <h3 class="icon-display-header">Fast Service</h3>
+            <p>We'll get to you quickly with a minimum of fuss</p>
+          </div>                 
+        </div>
+        <div class="icon-display-divider"></div>
+
+        <div class="icon-display-unit border-right">
+          <img src="resources/img/icons/plumber-blue.svg" class="icon-display-icon" alt="">
+          <div class="icon-display-text">
+            <h3 class="icon-display-header">Professional Engineers</h3>
+            <p>Our friendly drain pros will get your drains flowing fast</p>        
+          </div>
+ 
+        </div>
+        <div class="icon-display-unit">
+          <img src="resources/img/icons/discount-badge-blue.svg" class="icon-display-icon" alt="">
+         <div class="icon-display-text">
+          <h3 class="icon-display-header">Price Guarantee</h3>
+          <p>Our competitive prices are the best around for a professional service </p>
+         </div>
+         
+        </div>
+
+      </div>
+      <!-- <div id="triangle-bottomright"></div> -->
+
+    </div>
+
+    <!-- <div id="rectangle-bottomb">
+      <div class="image-text-row">
+        <img src="resources/img/icons/city.svg" class="image-icon" />
+        <p>London-<br />wide</p>
+      </div>
+      <div class="image-text-row">
+        <img src="resources/img/icons/thumbs-up2.svg" class="image-icon" />
+        <p>No Callout <br />Charge</p>
+      </div>
+      <div class="image-text-row">
+        <img src="resources/img/icons/fast-van.svg" class="image-icon" />
+        <p>Fast <br />Response</p>
+      </div>
+      <div class="image-text-row">
+        <img src="resources/img/icons/clock2.svg" class="image-icon" />
+        <p>24/7 <br />Service</p>
+      </div>
+  </div> -->
+<div class="divider">
+  <h2 class="hero-headd headb-blue">Blocked drains? We are here to help</h2>
+  <h2 class="hero-headd headb-red">TAKE A LOOK AT OUR SERVICES</h2>
+</div>
+ 
+
+    <div class="section-5">
+      <!-- <h2 class="header">Our Services</h2> -->
+      <div class="services" >
+        <a class="service" href="drain-unblocking.html">
+          <h2 class="service-title">Drain Unblocking</h2>
+          
+          
+          <p class="service-text">
+            24-7 Drains are specialists in unblocking, jetting and clearing of all types of drains.
+            Our engineers are equipped with the latest drain jetting equipment.
+          </p>
+          <img
+            class="service-image"
+            src="resources/img/emergency-drain-unblocking.jpeg"
+            alt="Emergency Drain Unblocking image"
+          />
+        </a>
+        <a class="service" href="emergency-plumbing.html">
+          <h2 class="service-title">Emergency Plumbing</h2>
+          
+          
+          <p class="service-text">
+            Whether it’s a burst pipe or even a broken toilet we’re here to get it
+            fixed. Our technicians are experienced in dealing with all kinds of emergency plumbing.
+          </p>
+          <img
+            class="service-image"
+            src="resources/img/emergency-plumbing.jpeg"
+            alt="Emergency Plumbing"
+          />
+        </a>
+        <a class="service" href="cctv-drain-surveys.html">
+          <h2 class="service-title">CCTV Drain Surveys</h2>
+          
+          
+          <p class="service-text">
+            24-7 Drains specialise in CCTV surveying and reporting. Our engineers are able to locate
+            and assess the problem using the latest Drainage CCTV systems. 
+          </p>
+          <img class="service-image" src="resources/img/cctv-drains.jpeg" alt="CCTV Drain Surveys" />
+        </a>
+        <a class="service" href="external-drains.html">
+          <h2 class="service-title">External Drains</h2>
+          
+          
+          <p class="service-text">
+            Outside drains are often blocked by organic matter. If your external drain is overflowing, it is likely to be a problem
+            between the drain and the main sewer pipe. 
+          </p>
+          <img
+            class="service-image"
+            src="resources/img/external-drains.jpeg"
+            alt="External drains image"
+          />
+        </a>
+      </div>
+    </div>
+
+    <div class="call-now-van-section">
+      <img src="resources/img/call-now-van.png" class="call-now-van">
+    </div>
+  
+
+    <footer id="footer-parent">
+      <div id="footer">
+        <div id="site-map">
+          <ul>
+            <h3>Site Map</h3>
+            <li class="footer-list-item">
+              <a href="#">Home</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="#">Commercial</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="#">Pricing</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="#">Booking</a>
+            </li>
+          </ul>
+        </div>
+        <div id="our-services">
+          <ul>
+            <h3>Services</h3>
+            <li class="footer-list-item">
+              <a href="#">Drain Unblocking</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="#">Drain Clearing</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="#">High Pressure Jetting</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="#">Emergency Plumbing</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="#">CCTV Surveys</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="#">Drain Excavation, Relining and Root Removal</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="#">Proactive Drain Maintenance</a>
+            </li>
+          </ul>
+        </div>
+        <p class="copyright"></p>
+      </div>
+    </footer>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="resources/js/script.js"></script>
+  </body>
+</html>
+
+<!-- TO INCLUDE...
+  About us
+  Areas covered
+  domestic / Commercial
+  prices
+  services:  
+    -drain unblocking
+    -CCTV drains survey
+    -drain repairs
+    -drain cleaning and jetting
+    ADD COVID POLICY
+-->
+
+<!-- TO DO  
+  About us page
+  code up booking page
+  write covid policy
+
+
+-->
