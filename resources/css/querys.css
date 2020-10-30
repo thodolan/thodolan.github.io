@@ -9,7 +9,7 @@ A L L   P A G E S
 ***********************/
 
   #navbar {
-    height: clamp(65px, 65px + 2vw, 70px);
+    height: var(--nav-height-lg);
   }
 
   .menu {
@@ -187,10 +187,11 @@ H O M E   P A G E
   #section-3b {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around; */
+    justify-content: space-between;
     /* width: 100%; */
     position: relative;
     background-image: linear-gradient(#ffff, var(--lgt-grey));
+    height: calc(100vh - var(--nav-height-lg));
 
     /* max-height: 98vh; */
     /* min-height: calc(100vh - var(--nav-height)); */
@@ -198,21 +199,22 @@ H O M E   P A G E
 
   .section-3b-top {
     display: flex;
+    height: 90%;
     /* flex-direction: column; */
-    justify-content: space-around;
+    justify-content: space-between;
     /* width: 100%; */
     position: relative;
     /* background-image: linear-gradient(#ffff, var(--lgt-grey)); */
     /* max-height: 98vh; */
-    min-height: calc(100vh - var(--nav-height));
+    /* min-height: calc(100vh - var(--nav-height-lg)); */
   }
 
   .hero-left {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 60%;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    width: 62.5%;
     padding-left: 25px;
   }
 
@@ -232,7 +234,8 @@ H O M E   P A G E
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 40%;
+    align-items: flex-end;
+    width: 30%;
   }
 
   .hero-headb {
@@ -281,12 +284,13 @@ H O M E   P A G E
   } */
 
   #vanb {
-    width: 85%;
+    width: 80%;
     height: auto;
   }
 
   .checkmarks {
-    margin-top: 6vh;
+    height: 10%;
+    margin-top: 3vh;
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: space-between;
@@ -345,23 +349,26 @@ H O M E   P A G E
 
   .hero-form {
     align-self: flex-end;
+    /* background-color: var(--grey); */
     /* margin-top: 8vh; */
-    /* width: 50%; */
-    height: 55%;
+    width: 70%;
+    height: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* border: 1px solid var(--slate-grey); */
+    border: 1px solid var(--blue);
     /* border-radius: 15px; */
     align-items: center;
     padding: 20px;
-    margin: 4vh 5vh;
+    /* margin: 4vh 5vh; */
+    margin: 3vh 1vh 0 0;
   }
 
   .hero-form-header {
     /* text-align: center; */
-    font-size: clamp(15px, 15px + 0.5vw, 25px);
+    font-size: clamp(15px, 15px + 0.3vw, 25px);
     font-weight: 600;
+    /* color: #ffff; */
     color: var(--blue);
   }
 
@@ -371,15 +378,16 @@ H O M E   P A G E
   }
 
   .form-inputb {
-    width: 47.5%;
+    width: 85%;
     /* border-bottom: 1px solid var(--blue); */
     /* border: 3px solid var(--slate-grey); */
     /* background: transparent; */
-    border: none;
+    /* border: none; */
+    border: 1px solid var(--blue);
     /* margin-bottom: 2vh; */
     font-size: 1em;
     font-size: clamp(12px, 12px + 0.3vw, (var(--max-w) * 0.003) + 12px);
-    color: var(--grey);
+    color: var(--blue);
     font-weight: 300;
     padding: 5px;
     /* line-height: 25px; */
@@ -395,24 +403,31 @@ H O M E   P A G E
 
   .hero-form-button {
     /* padding: 10px; */
-    width: 55%;
+    width: 85%;
     /* background-color: var(--red); */
     /* background-color: #4caf50; */
-    background: var(--blue);
+    /* background: #ffff;
+    color: var(--blue); */
 
     color: #ffff;
+    background-color: var(--red);
     font-size: 1em;
-    font-size: clamp(12px, 12px + 0.5vw, (var(--max-w) * 0.005) + 12px);
+    font-size: clamp(12px, 12px + 0.2vw, (var(--max-w) * 0.002) + 12px);
     border: none;
     padding: 10px 15px;
     cursor: pointer;
   }
 
+  .hero-form-button:hover {
+    color: #ffff;
+    background-color: var(--red);
+  }
+
   .icon-display {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 4vh;
-    margin-bottom: 10px;
+    /* margin-top: 4vh; */
+    margin-bottom: 3px;
     width: 100%;
   }
 
@@ -444,11 +459,11 @@ H O M E   P A G E
   }
 
   .divider {
-    /* height: 30vh; */
+    height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 10vh;
+    /* margin-top: 10vh; */
   }
 
   .hero-headd {
