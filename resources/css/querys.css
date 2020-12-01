@@ -223,8 +223,7 @@ H O M E   P A G E
   }
 
   #triangle-topleft {
-    /* border-top: 32vh solid #e8402d56; */
-    border-top: 32vh solid rgb(255, 135, 7);
+    border-top: 32vh solid #e8402d56;
     border-right: 48vw;
     border-right: clamp(100px, 65vw, var(--max-w) * 0.65) solid transparent;
     border-left: none;
